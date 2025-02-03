@@ -1,0 +1,57 @@
+.reviews {
+  margin-top: 50px;
+
+  .add {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+
+    h3{
+      font-family: 'QuickSand', sans-serif;
+    }
+
+    .addForm {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-family: 'QuickSand', sans-serif;
+
+      .cont2{
+        display: flex;
+        justify-content: space-between;
+      input {
+        padding: 0 20px 0 20px;
+        width: 700px;
+        font-family: 'QuickSand', sans-serif;
+      }
+      
+      select {
+        width: 100px;
+        height: 80px;
+        align-self: flex-end;
+        font-family: 'QuickSand', sans-serif;
+        font-size: 1.1rem;
+      }
+    }
+      button {
+        align-self: flex-end;
+        width: 100px;
+        border: none;
+        padding: 10px;
+        color: white;
+        background-color: #102028;
+        cursor: pointer;
+        font-family: 'QuickSand', sans-serif;
+      }
+    
+    }
+  }
+
+  hr {
+    height: 0;
+    border: 0.5px solid lightgray;
+    margin: 50px 0px;
+  }
+}

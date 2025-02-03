@@ -1,0 +1,135 @@
+.gigs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+  
+    .container {
+      width: 1400px;
+      padding: 30px 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  
+      .breadcrumbs {
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 13px;
+        color: #555;
+        font-family: 'QuickSand', sans-serif;
+      }
+  
+      h1 {
+        font-family: 'QuickSand', sans-serif;
+      }
+  
+      p {
+        color: #999;
+        font-weight: 300;
+        font-family: 'QuickSand', sans-serif;
+      }
+  
+      .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+  
+        .left {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: #555;
+          font-weight: 300;
+          font-family: 'QuickSand', sans-serif;
+  
+          input{
+            padding: 5px;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            outline: none;
+            font-family: 'QuickSand', sans-serif;
+  
+            &::placeholder{
+              color: #999;
+            }
+          }
+  
+          button{
+            padding: 5px 10px;
+            background-color: #102028;
+            color: white;
+            border: none;
+            font-weight: 500;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'QuickSand', sans-serif;
+          }
+  
+        }
+  
+        .right {
+          position: relative;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-family: 'QuickSand', sans-serif;
+  
+          .sortBy {
+            color: #555;
+            font-weight: 300;
+            font-family: 'QuickSand', sans-serif;
+          }
+  
+          .sortType {
+            font-weight: 500;
+            font-family: 'QuickSand', sans-serif;
+          }
+  
+          img {
+            width: 15px;
+            cursor: pointer;
+          }
+  
+          .rightMenu {
+            padding: 10px; /* Reduced padding for consistent size */
+            background-color: white;
+            border: 0.5px solid lightgrey;
+            border-radius: 5px;
+            position: absolute;
+            top: 30px;
+            right: 0;
+            z-index: 9;
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Reduced gap for uniform spacing */
+            color: #555;
+            font-family: 'QuickSand', sans-serif;
+            width: 150px; /* Fixed width */
+            height: auto; /* Prevent height resizing */
+            box-sizing: border-box; /* Ensures padding doesn't affect size */
+          }
+          
+          .rightMenu span {
+            cursor: pointer;
+            padding: 5px 10px; /* Add padding for consistent spacing */
+            border-radius: 3px; /* Small rounded corners for hover effect */
+            transition: background-color 0.2s ease; /* Smooth hover effect */
+          }
+          
+          .rightMenu span:hover {
+            background-color: #f0f0f0; /* Highlight background on hover */
+          }
+          
+        }
+      } 
+  
+      .cards {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-family: 'QuickSand', sans-serif;
+      }
+    }
+  }

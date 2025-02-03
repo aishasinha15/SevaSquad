@@ -1,0 +1,55 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    form {
+      width: 360px;
+      padding: 100px 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-family: "Quicksand", sans-serif;
+  
+      h1 {
+        color: #102028;
+        margin-bottom: 20px;
+        font-family: "Quicksand", sans-serif;
+      }
+  
+      label {
+        color: rgb(70, 70, 70);
+        font-size: 18px;
+        font-family: "Quicksand", sans-serif;
+      }
+  
+      input,
+      textarea {
+        padding: 20px;
+        border: 1px solid rgb(216, 214, 214);
+        font-family: "Quicksand", sans-serif;
+        border-radius: 5px;
+      }
+  
+      button {
+        border: none;
+        padding: 20px;
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        background-color: #102028;
+        cursor: pointer;
+        font-family: "Quicksand", sans-serif;
+        border-radius: 5px;
+      }
+
+      .reg{
+        text-align: center;
+      }
+  
+      span{
+        color: red;
+        font-size: 12px;
+      }
+    }
+  }

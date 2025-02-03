@@ -1,0 +1,84 @@
+
+
+.footer{
+    position: fixed;  /* Add this */
+    bottom: 0;       /* Add this */
+    left: 0;         /* Add this */
+    right: 0;        /* Add this */
+    background: white; /* Add this to ensure footer has a background */
+    height: auto; /* Allow it to expand based on content */
+    width: 100%; /* Ensure it spans the entire width */
+    z-index: 1000; /* Make sure it's above other content */
+    
+    .container{
+        padding: 30px 5% 0 5%;
+
+        .line {
+            border: none;
+            border-top: 1px solid #e0e0e0;
+            margin: 0;
+            margin-top: 30px;
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+
+            .left{
+                display: flex;
+                gap:10px;
+                align-items: center; 
+                font-family: 'QuickSand', sans-serif;
+
+                h3{
+                    color: #787878;
+                    font-family: 'QuickSand', sans-serif;
+                }
+
+                span{
+                    color: #aeaeae;
+                    font-size: 0.8rem;
+                    font-family: 'QuickSand', sans-serif;
+                }
+            }
+
+            .right{
+                display: flex;
+                gap:50px;
+                align-items: center;
+                color: #8a8a8a;
+                font-size: 0.9rem;
+                svg{
+                    height: 20px;
+                    width: 30px;
+                    color: #656565;
+                    font-weight: bold;
+                    font-family: 'QuickSand', sans-serif;
+                }
+
+                .social{
+                    display: flex;
+                    gap:10px;
+                    font-family: 'QuickSand', sans-serif;
+                }
+
+                .language{
+                    display: flex;
+                    gap:10px;
+                    font-family: 'QuickSand', sans-serif;
+                }
+
+                .currency{
+                    display: flex;
+                    gap:5px;
+                    font-family: 'QuickSand', sans-serif;
+                }
+            }
+        }
+    }
+}
+
+/* Add this to ensure content above the footer is not hidden */
+body {
+    margin-bottom: 150px; /* Adjust this value based on your footer's height */
+}

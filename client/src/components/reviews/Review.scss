@@ -1,0 +1,111 @@
+.review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:30px;
+  padding: 50px 30px;
+  padding-bottom: 0;
+
+  h1{
+    font-weight: 500;
+    font-family: 'QuickSand', sans-serif; /* Modern, clean font */
+    color: #333; /* Dark gray color */
+    font-size: 3rem;
+    margin-bottom: 30px;
+    padding-left: 170px;
+    font-family: 'QuickSand', sans-serif;
+  }
+  
+  .review-content{
+    margin-left: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width:500px;
+    height: 500px;
+    border: 1px solid rgb(174, 173, 173);
+    border-radius: 5%;
+    padding: 10px;
+    font-family: 'QuickSand', sans-serif;
+
+    .review-image{
+      border-radius: 50%;
+      width: 130px;
+      height: 130px;      
+      margin-top: 20px;
+      margin-left: 185px;
+      object-fit: cover;
+    }
+
+    .review-name{
+      font-weight: 400;
+      text-align: center;
+      margin-top: (-25px);
+      font-size: 1.3rem;
+      color: #575757;
+      font-family: 'QuickSand', sans-serif;
+    }
+
+    .review-title{
+      text-align: center;
+      margin-top: (-40px);
+      font-size: 1.1rem;
+      color: #757474;
+      font-family: 'QuickSand', sans-serif;
+     
+    }
+
+    .review-text{
+      color: #757474;
+      font-size: 1rem;
+       line-height:1.4;
+      word-spacing: 2px;
+      text-align: center;
+      font-family: 'QuickSand', sans-serif;
+    }
+
+    .review-rating {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+      margin-top: (-25px);
+    
+      .star {
+        color: #ccc;
+        margin: 0 2px;
+    
+        &.filled {
+          color: gold;
+          fill: gold;
+        }
+      }
+    }
+
+    .review-navigation {
+      display: flex;
+      justify-content: space-between;
+     
+      // margin-top: 1rem;
+    
+      .nav-button {
+        margin-top: (-600px); 
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+        transition: opacity 0.3s ease;
+        color: #757474;
+    
+        
+        &.prev {
+          margin-right: auto;
+        }
+    
+        &.next {
+          margin-left: auto;
+        }
+      }
+    }
+    
+  }
+}

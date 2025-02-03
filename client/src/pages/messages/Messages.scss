@@ -1,0 +1,79 @@
+.messages {
+    display: flex;
+    justify-content: center;
+  
+    .container {
+      width: 1400px;
+      padding: 50px 0px;
+  
+      .title {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'QuickSand', sans-serif; 
+  
+        button {
+          background-color: #102028;
+          color: white;
+          font-weight: 500;
+          border: none;
+          padding: 10px;
+          font-family: 'QuickSand', sans-serif; 
+          cursor: pointer;
+        }
+      }
+  
+      table {
+        width: 100%;
+  
+        tr {
+          height: 100px;
+          th {
+            text-align: left;
+            font-family: 'QuickSand', sans-serif; 
+          }
+          td {
+            padding: 10px;
+  
+            &:first-child {
+              font-weight: 500;
+              font-family: 'QuickSand', sans-serif; 
+            }
+            
+            &:nth-child(2),
+            &:nth-child(3) {
+              color: gray;
+              font-family: 'QuickSand', sans-serif; 
+            }
+          }
+  
+          .mark {
+            background-color: #102028;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-family: 'QuickSand', sans-serif; 
+            margin-left: 10px;
+          }
+  
+          &.active {
+            background-color: #ededed;
+          }
+
+          .delete-btn {
+            background-color: rgb(217, 17, 17);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-family: 'QuickSand', sans-serif; 
+            margin-left: 40px;
+          }
+          .delete-btn:hover {
+            background-color: darkred;
+          }
+          
+        }
+      }
+    }
+  }
